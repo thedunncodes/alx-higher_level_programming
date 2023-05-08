@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 <<< "$PYCODE" #"<<<" passes contents of d env var to "python3"
