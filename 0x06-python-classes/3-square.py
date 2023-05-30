@@ -30,5 +30,3 @@ class Square:
         this is a public instance method, returns curr sqr area
         """
         return self.__size ** 2
-
-
