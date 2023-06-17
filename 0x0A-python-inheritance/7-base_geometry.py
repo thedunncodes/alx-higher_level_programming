@@ -19,7 +19,6 @@ class BaseGeometry:
     """
     pass
 
-    @classmethod
     def area(self):
         """
         This calculates the area of the geometric shape.
