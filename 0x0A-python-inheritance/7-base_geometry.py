@@ -17,6 +17,7 @@ class BaseGeometry:
     Methods:
     - area(): To raise an exception and be implemented in derived classes.
     """
+    pass
 
     @classmethod
     def area(self):
