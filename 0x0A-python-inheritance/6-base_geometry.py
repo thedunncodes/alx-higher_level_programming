@@ -12,7 +12,7 @@ class BaseGeometry:
     this is updated to raise exception
 
     Methods:
-    - area(): To raise an exception and should be implemented in derived classes.
+    - area(): To raise an exception and should be implemented in derived class
     """
 
     @classmethod
