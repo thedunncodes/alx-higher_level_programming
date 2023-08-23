@@ -15,7 +15,8 @@ if __name__ == '__main__':
                            port=3306, db=dbname)
 
     mycursor = mydb.cursor()
-    query = "SELECT * FROM states WHERE states.name LIKE 'N%' ORDER BY states.id ASC;"
+    query = "SELECT * FROM states WHERE states.name LIKE BINARY 'N%'\
+            ORDER BY states.id ASC;"
     mycursor.execute(query)
 
     Savings = mycursor.fetchall()
