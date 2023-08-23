@@ -15,7 +15,7 @@ if __name__ == '__main__':
                            port=3306, db=dbname)
 
     mycursor = mydb.cursor()
-    mycursor.execute('SELECT * FROM state ORDER BY states.id ASC')
+    mycursor.execute('SELECT * FROM states ORDER BY states.id ASC')
 
     Savings = mycursor.fetchall()
     for saver in Savings:
