@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
     Savings = mycursor.fetchall()
 
-    print(",".join([str(name[0]) for name in Savings]))
+    print(",".join([name[0] for name in Savings]))
 
     mydb.commit()
     mycursor.close()
