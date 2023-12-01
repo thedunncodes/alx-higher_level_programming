@@ -5,7 +5,7 @@
 from urllib.request import Request, urlopen
 
 if __name__ == "__main__":
-    url = 'https://intranet.hbtn.io/status'
+    url = 'https://alx-intranet.hbtn.io/status'
     with urlopen(url) as response:
         html = response.read()
         print("Body response:")
