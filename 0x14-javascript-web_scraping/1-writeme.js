@@ -10,5 +10,4 @@ fs.writeFile(path, data, 'utf-8', (err) => {
   if (err) {
     console.log(err);
   }
-  console.log('Success!');
 });
