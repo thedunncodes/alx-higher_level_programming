@@ -4,8 +4,6 @@
 const url = process.argv[2];
 const request = require('request');
 
-const targetstr = `https://swapi-api.alx-tools.com/api/people/18/`;
-
 request.get(url, (error, response, body) => {
   if (error) {
     console.error(error);
@@ -16,7 +14,7 @@ request.get(url, (error, response, body) => {
       for (const actor in cast) {
         if (actor === 'characters') {
           for (let i = 0; i < cast[actor].length; i++) {
-            if (cast[actor][i] === targetstr) {
+            if (cast[actor][i].includes(18)) {
               count += 1;
             }
           }
