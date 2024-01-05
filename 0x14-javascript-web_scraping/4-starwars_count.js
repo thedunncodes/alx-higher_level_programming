@@ -1,11 +1,10 @@
 #!/usr/bin/node
 // Searches by ID in an api data
 
-const id = process.argv[2];
+const url = process.argv[2];
 const request = require('request');
 
-const url = 'https://swapi-api.alx-tools.com/api/films/';
-const targetstr = `https://swapi-api.alx-tools.com/api/people/${id}/`;
+const targetstr = `https://swapi-api.alx-tools.com/api/people/18/`;
 
 request.get(url, (error, response, body) => {
   if (error) {
